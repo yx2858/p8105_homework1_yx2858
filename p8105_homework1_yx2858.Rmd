@@ -19,4 +19,6 @@ ggplot(early_january_weather, aes(x = time_hour, y = temp, color = humid)) + geo
 ggsave("early_january_weather.pdf") #save the scatterplot in pdf format
 ```
 
+Description of the dataset:
+The dataset contains several variables including year, month, day, hour, temperature, humid, wind direction, wind speed, wind gust, and etc. The size of the dataset can be found using nrow and ncol in r code. In this dataset, the number of rows is 348, and the number of columns (variables) is 15. The mean temperature in the dataset is calculated using the above code mean(early_january_weather$temp) which is 39.58212 in degrees Fahrenheit.
 
