@@ -22,3 +22,17 @@ ggsave("early_january_weather.pdf") #save the scatterplot in pdf format
 Description of the dataset:
 The dataset contains several variables including year, month, day, hour, temperature, humid, wind direction, wind speed, wind gust, and etc. The size of the dataset can be found using nrow and ncol in r code. In this dataset, the number of rows is 348, and the number of columns (variables) is 15. The mean temperature in the dataset is calculated using the above code mean(early_january_weather$temp) which is 39.58212 in degrees Fahrenheit.
 
+
+#Problem 2
+Create a dataframe:
+```{r create_df}
+df =
+  tibble(
+    v_sample = rnorm(10), #random sample size of 10
+    v_logical = v_sample > 0, #a logical vector indicating whether the elements of the sample are greater than 0
+    v_character = c("A", "B", "C", "D", "E", "F", "G", "H", "I", "J"), #a character vector of length 10
+    v_factor = factor(c("low", "low", "low", "medium", "medium", "medium", "medium", "high", "high", "high")) #a factor vector of length 10 with 3 different "levels"
+  )
+```
+
+
