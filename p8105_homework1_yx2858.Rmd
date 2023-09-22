@@ -35,4 +35,12 @@ df =
   )
 ```
 
+Take the mean of each variables in dataframe:
+```{r}
+mean(pull(df, v_sample)) #calculate the mean of sample size
+mean(pull(df, v_logical)) #calculate the mean of logical vector
+mean(pull(df, v_character)) #calculate the mean of character vector
+mean(pull(df, v_factor)) #calculate the mean of factor vector
+```
+The mean of v_sample and v_logical works, but the mean of v_character and v_factor does not work.
 
