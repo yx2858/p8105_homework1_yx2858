@@ -44,3 +44,11 @@ mean(pull(df, v_factor)) #calculate the mean of factor vector
 ```
 The mean of v_sample and v_logical works, but the mean of v_character and v_factor does not work.
 
+Apply "as.numeric" function to the logical, character, and factor variables:
+```{r}
+as.numeric(pull(df, v_logical)) #convert logical vector to numeric
+as.numeric(pull(df, v_character)) #convert character vector to numeric
+as.numeric(pull(df, v_factor)) #convert factor vector to numeric
+```
+Logical vector and factor vector are successfully converted to numeric; however, character vector cannot be converted to numeric because it is not a numeric variable. This explains why character vector and factor vector did not work when calculating the mean value.
+
