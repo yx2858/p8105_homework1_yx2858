@@ -9,3 +9,14 @@ output: html_document
 library(tidyverse)
 ```
 
+#Problem 1
+
+```{r}
+library(moderndive) #load library moderndive
+data("early_january_weather") #load data "early_january_weather"
+mean(early_january_weather$temp) #calculate the mean for temperature
+ggplot(early_january_weather, aes(x = time_hour, y = temp, color = humid)) + geom_point() #graph the scatterplot
+ggsave("early_january_weather.pdf") #save the scatterplot in pdf format
+```
+
+
