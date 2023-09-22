@@ -1,0 +1,6 @@
+---
+title: "p8105_homework1_yx2858"
+author: "Yueyi Xu"
+date: "2023-09-22"
+output: html_document
+---
